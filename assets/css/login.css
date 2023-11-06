@@ -1,0 +1,17 @@
+.login_form{
+    background-color: #8bdaea;
+    height: 350px;
+}
+.main_login{
+    width: 45%;
+    float: right;
+    margin-top: 1rem;
+    margin-right: 23%;
+}
+.container_login{
+    height: 300px !important;
+}
+.SignUp_form{
+    margin-left: 30%;
+    width: 40%;
+}

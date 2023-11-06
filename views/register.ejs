@@ -1,0 +1,44 @@
+<!-- register ejs template html code  -->
+<link rel="stylesheet" href="/css/login.css">
+<!-- Main Content -->
+	<div class="container-fluid">
+		<div style="margin: 1rem auto;" class="row main-content text-center">
+			<div class="col-md-8 col-xs-12 col-sm-12 login_form SignUp_form">
+				<div class="container-fluid">
+					<div class="row">
+						<h2>Registration</h2>
+					</div>
+                    <!-- contailner for taking user Input  -->
+					<div class="row">
+						<form control="" class="form-group" action="/users/create-user" method="POST">
+							<label   style="float: left;margin-left: -11px;"><b>Username</b></label><br/>
+							<div class="row">
+								<input type="text" name="name" id="username" class="form__input" placeholder="Username">
+							</div>
+							<label   style="float: left;margin-left: -11px;"><b>UserEmail</b></label><br/>
+							<div class="row">
+								<input type="text" name="email" id="username" class="form__input" placeholder="Email">
+							</div>
+							<label   style="float: left;margin-left: -11px;"><b>Password</b></label><br/>
+							<div class="row">
+								<input type="password" name="password" id="password" class="form__input" placeholder="Password">
+							</div>
+							<label   style="float: left;margin-left: -11px;"><b>Confirm Password</b></label><br/>
+							<div class="row">
+								<input type="password" name="password2" id="password" class="form__input" placeholder="Confirm Password">
+							</div>
+							<div class="row">
+								<input type="submit" value="SignUp" class="btn">
+							</div>
+						</form>
+					</div>
+                    <!-- login container  -->
+					<div class="row">
+						<p>Have An Account? <a href="/users/login">Log In</a></p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- Footer -->
+	

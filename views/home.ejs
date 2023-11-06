@@ -1,0 +1,58 @@
+
+<link rel="stylesheet" href="/css/home.css">
+<div id="container">
+   
+
+    <div class="home">
+                <h5 class="text-colr">Give Review to other employee*
+                    <br>
+                <small class="small-text text-colr"><i>this task is assigned by admin</i></small>
+                </h5>
+            <div class="review-box">
+               
+                <% for(let r of recipients){ %> 
+               <%if(r!= null){%>
+                   <div class="card no-b ">
+                    <div class="card-body">
+                      <h5 class="card-title text-colr">To:<%= r.name %></h5>
+                      <form action="/reviews/newReview/<%= r._id %>" method="get">
+                        <textarea
+                        class="form-control"
+                        placeholder="Leave a review here"
+                        id="floatingTextarea2"
+                        style="height: 100px"
+                        name="newReview"
+                        rows="5">
+                        </textarea>
+                        <div class="right-alligned m-10">
+                            <button type="submit" class="btn btn-info mt-2">submit </button>
+                        </div>
+                      </form>
+                    </div>
+                </div>
+                <%}%>
+            <% } %>
+
+            </div>
+
+    </div>
+
+    <div class="home">
+                <h5 class="text-colr">My Reviews by Other employee*</h5>
+            <div class="review-box">
+
+              <% for(let i = 0; i < reviews.length; i++) { %>
+                <div class="card-out">
+                    <div class="in-card">
+                      <h5 class="cls-txt">message : <%= reviews[i].review %></h5>
+                      <p class="cls-txt">from : <%= reviews[i].name %></p>
+                      </form>
+                    </div>
+                </div>
+            <% } %>
+
+            </div>
+        
+    </div>
+        
+</div>
